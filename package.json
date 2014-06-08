@@ -1,0 +1,39 @@
+{
+  "name": "amd-driver-scripts",
+  "version": "0.0.0",
+  "description": "Get a list of entry-point, app initialization AMD modules (i.e., driver scripts) within a directory ",
+  "bin": {
+    "amd-driver-scripts": "bin/driverScripts.js"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrjoelkemp/node-amd-driver-scripts.git"
+  },
+  "keywords": [
+    "amd",
+    "driver",
+    "script",
+    "app",
+    "load",
+    "modules"
+  ],
+  "author": "Joel Kemp <joel@mrjoelkemp.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrjoelkemp/node-amd-driver-scripts/issues"
+  },
+  "homepage": "https://github.com/mrjoelkemp/node-amd-driver-scripts",
+  "dependencies": {
+    "ast-module-types": "^1.1.1",
+    "node-dir": "^0.1.5",
+    "node-source-walk": "^1.1.1",
+    "q": "^1.0.1"
+  }
+}
