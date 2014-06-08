@@ -1,6 +1,6 @@
 {
   "name": "amd-driver-scripts",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Get a list of entry-point, app initialization AMD modules (i.e., driver scripts) within a directory ",
   "bin": {
     "amd-driver-scripts": "bin/driverScripts.js"
