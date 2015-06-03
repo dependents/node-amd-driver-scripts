@@ -46,7 +46,7 @@ assertFile('driver.js', true);
 assertFile('define.js', false);
 assertFile('unparseable.js', false);
 
-getDriverScripts(__dirname + '/example', function(drivers) {
+getDriverScripts(__dirname + '/fixtures', function(drivers) {
   var driverFileNames = drivers.map(function(filename) {
     return filename.split('/').reverse()[0];
   });

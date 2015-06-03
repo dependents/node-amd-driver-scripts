@@ -75,7 +75,7 @@ module.exports = function(filename, cb) {
  * @return {Boolean}
  */
 module.exports.isDriverScript = function (filename) {
-  var src = fs.readFileSync(filename).toString(),
+  var src = fs.readFileSync(filename, 'utf8'),
       walker = new Walker(),
       foundTopLevelModule = false;
 
