@@ -1,4 +1,0 @@
-// ZOMBIE
-define({
-
-});

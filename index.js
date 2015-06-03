@@ -79,12 +79,16 @@ module.exports.isDriverScript = function (filename) {
       walker = new Walker(),
       foundTopLevelModule = false;
 
-  walker.walk(src, function (node) {
-    if (types.isTopLevelRequire(node)) {
-      foundTopLevelModule = true;
-      walker.stopWalking();
-    }
-  });
+  try {
+    walker.walk(src, function (node) {
+      if (types.isTopLevelRequire(node)) {
+        foundTopLevelModule = true;
+        walker.stopWalking();
+      }
+    });
+  } catch(SyntaxError) {
+    return false;
+  }
 
   return foundTopLevelModule;
 };
